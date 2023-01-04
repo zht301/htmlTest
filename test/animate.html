@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html{
+            width: 100%;
+            height: 100%;
+            /*background: url("1.jpg") center/cover;*/
+        }
+        .img{
+            width: 100px;
+            height: 200px;
+            position: relatve;
+            top: 200px;
+            left: 200px;
+            -webkit-transition: transform 2s ease;
+            -moz-transition: transform 2s ease;
+            -ms-transition: transform 2s ease
+            transition: transform 2s ease;
+        }
+        #underline{
+            width: 110px;
+            height: 50px;
+            margin: 20px;
+            position: relative;
+        }
+        #underline>a{
+            color: lightgrey;
+            text-decoration: none;
+            /* 必须有下面这三行：这可以让此“div”移到父级的中央（而不是中心与中心重合） */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            cursor: pointer;
+            /* 然后再去位移 —— 上面往哪偏，这里往回移。   （正百分比是往右、下） */
+            transform: translate(-50%,-50%);
+        }
+        #underline:after{
+            content: "";
+            width: 0;
+            height: 2px;
+            background: rgb(255,170,0);
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transition: all .5s;
+        }
+        #underline:hover:after{
+            left: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<!--<img class="img" src="2.png" />-->
+<div id="underline">
+    <a href="#">云小梦</a>
+</div>
+
+<script>
+    // let img=document.querySelector('.img');
+    // img.onclick=function(){
+    //     img.style.transform="translate(200px,300px)"
+    // }
+</script>
+</body>
+</html>
