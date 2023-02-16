@@ -1,0 +1,6 @@
+/* 设置css文件编码 */
+@charset "utf-8";
+h1 {
+    font-size: 50px;
+    color: aqua;
+}
