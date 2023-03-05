@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        /* 整体的样式 */
+        .mail{
+            display: inline-block ;
+            width: 120px;
+            border: 2px solid #999;
+            text-align: center;
+            /* float: left; */
+        }
+        /* 局部 */
+        .header{
+            background-color: #999;
+            color: #fff;
+        }
+        /* 局部 邮箱列表 */
+        .mail ul{
+            display: none;
+        }
+        .mail:hover ul{
+            display: block;
+        }
+        /* 一种思路 */
+        /* .header:hover+ul{
+            display: block;
+        } */
+
+        .mail ul li:hover{
+            background-color: skyblue;
+        }
+        .mail ul li a{
+            display: block;
+        }
+        .email{
+            display: inline-block;
+            width: 120px;
+            border: 2px solid #999;
+            /* float: right; */
+            text-align: center;
+        }
+        .eheader{
+            background-color: #999;
+            color: #fff;
+        }
+        .email ul li:hover{
+            background-color: skyblue;
+        }
+        .email ul{
+            display: none;
+        }
+        .email:hover ul{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="mail">
+        <div class="header">邮箱</div>
+            <ul>
+                <li><a href="#">QQ邮箱</a></li>
+                <li><a href="#">163邮箱</a></li>
+                <li><a href="#">139邮箱</a></li>
+            </ul>
+    </div>
+    <div class="email">
+        <div class="eheader">邮箱</div>
+            <ul>
+                <li><a href="#">QQ邮箱</a></li>
+                <li><a href="#">163邮箱</a></li>
+                <li><a href="#">139邮箱</a></li>
+            </ul>
+    </div>
+</body>
+</html>

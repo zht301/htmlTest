@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* reset.css */
+        p,ul,body,h5{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        /* common.css */
+        .wrap{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .nav{
+            height: 30px;
+            background-color: #333;
+            color: aliceblue;
+        }
+
+        /* 具体的样式 */
+        li,h5,p{
+            display: inline-block;
+        }
+
+        .service ul li{
+            margin-left: 12px;
+            margin-right: 25px;
+        }
+        .service ul li p{
+            height: 42px;
+            line-height: 42px;
+
+            font-size: 18px;
+            color: #444;
+            font-weight: 700;
+        }
+
+        .service ul li h5{
+            width: 36px;
+            height: 42px;
+            /* 背景图需使用一张整合的图片 */
+            /* background-image
+               background-position去定位所需图标的位置
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="nav wrap">
+        <div class="left">左边的内容</div>
+        <div class="right">右边的内容</div>
+    </div>
+    <div class="header wrap"></div>
+    <div class="footer wrap"></div>
+    <!-- 多快好省 -->
+    <div class="service wrap">
+        <ul>
+            <li>
+                <h5>多</h5>
+                <p>品类齐全，轻松购物</p>
+            </li>
+            <li>
+                <h5>多</h5>
+                <p>品类齐全，轻松购物</p>
+            </li>
+            <li>
+                <h5>多</h5>
+                <p>品类齐全，轻松购物</p>
+            </li>
+            <li>
+                <h5>多</h5>
+                <p>品类齐全，轻松购物</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
